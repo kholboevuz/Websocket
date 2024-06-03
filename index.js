@@ -12,7 +12,7 @@ const wss = new WebSocket.Server({ server: app });
 
 function fetchDataAndSendToClients() {
   axios
-    .get('https://metest.uz/API/databaseconnect.php')
+    .get('DB CONNECT URI')
     .then((response) => {
       const apiData = response.data;
       wss.clients.forEach((client) => {
